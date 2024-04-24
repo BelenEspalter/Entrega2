@@ -1,0 +1,375 @@
+/* RESET */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Azeret Mono", monospace;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "norwester-titulos";
+    src: url(./resources/typo/norwester.otf);
+}
+
+h1 {
+    color: #2f2f2f !important;
+    text-align: left;
+    font-family: "norwester-titulos";
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+img {
+    display: block;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0% !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: black !important;
+    align-content: center !important;
+}
+
+.nav-pills .nav-link.disabled {
+    align-content: center !important;
+}
+
+.logo-imagen img {
+    height: 83px;
+    padding: 0% !important;
+    margin-right: 5px;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav div .letras-logo {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+a .logo-imagen div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div .logo-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    color: black;
+}
+
+.letras-logo .texto-principal {
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    padding: 0;
+}
+
+.letras-logo .texto-secundario {
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    padding: 0;
+}
+
+
+body .fondo-index {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent !important;
+}
+
+body video {
+    margin: 0%;
+    overflow: hidden;
+    position: fixed;
+    align-items: center;
+}
+
+nav .nav .nav-pills .flex-column .flex-sm-row {
+    background-color: transparent;
+}
+
+/* GRILLAS */
+main .grilla-nosotros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    margin: 10px;
+}
+
+.card-nosotros {
+    display: grid;
+    grid-area: auto;
+}
+
+.card-nosotros img {
+    width: 140px;
+    display: inline-block;
+}
+
+div .fotos-fundadores {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-nosotros h4 {
+    font-size: smaller;
+}
+
+.fundadores .arq {
+    display: flex;
+    justify-content: space-between;
+    margin: 0% !important;
+
+}
+
+.card-proyectos img {
+    width: 306px;
+}
+
+.card-permisos img {
+    width: 306px;
+}
+
+.card-habilitaciones img {
+    width: 306px;
+}
+
+main .grilla-nosotros h3 {
+    font-size: medium;
+    margin: 0%;
+}
+
+.grilla-nosotros p {
+    font-size: smaller;
+    color: #222222;
+    height: 180px;
+    overflow: hidden;
+    margin: 0% !important;
+}
+
+p.texto-fundadores {
+    height: 80px;
+}
+
+/* MAIN SERVICIOS */
+div .carousel-inner img {
+    border: rgb(65, 64, 64) dashed 2px !important;
+}
+
+div .carousel-inner p {
+    background-color: #e3e3e3;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 0% !important;
+}
+
+
+
+/* MAIN CLIENTES */
+.clientes-padre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.clientes-padre div {
+    width: 23%;
+    margin: 5px;
+    background-color: #d8d8d8;
+}
+
+.clientes-padre img {
+    width: 100%;
+}
+
+.cards-clientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    min-height: 330px;
+    padding: 3px;
+}
+
+.cards-clientes h4 {
+    margin-top: 5px;
+}
+
+
+.cards-clientes p {
+    font-size: small;
+    text-align: center;
+}
+
+/* MAIN CONTACTO */
+main .contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main .contacto p {
+    margin: 0%;
+}
+
+textarea {
+    margin-top: 5px;
+    background-color: #d6d6d6;
+    border-radius: 10px;
+    border: transparent !important;
+}
+
+input {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #d6d6d6;
+    border-radius: 10px;
+    border: transparent !important;
+    text-align: center;
+}
+
+.formulario div {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.form-check-input:checked {
+    background-color: #222222 !important;
+}
+
+
+
+
+/* BOTON FIJO */
+
+button {
+    position: fixed;
+    top: 85%;
+    right: 25px;
+}
+
+footer {
+    display: block;
+    color: white;
+    padding: 0% !important;
+    margin: 0% !important;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: x-small;
+    margin: 0%;
+    padding-top: 20px;
+}
+
+.footer-transparente {
+    opacity: 50%;
+}
+
+/*RESPONSIVE*/
+/*MOBILE LAST - - - max-width */
+
+/*TABLET*/
+@media (max-width:768px) {
+    main .grilla-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        margin: 10px;
+    }
+
+    main .grilla-nosotros img {
+        border: rgb(0, 0, 0) dashed 2px;
+        width: 369px;
+        margin-bottom: 5px;
+    }
+
+    div .fotos-fundadores img {
+        width: 175px;
+    }
+
+    footer {
+        opacity: 20%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: small;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 4px;
+        margin-top: 4px !important;
+    }
+    h4 {
+        font-size: small;
+    }
+    main .grilla-nosotros p{
+        margin-top: 2px !important;
+        font-size: 15px;
+    }
+}
+
+/*MOBILE*/
+
+@media (max-width:576px) {
+    main .grilla-nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        margin: 10px;
+    }
+
+    main .grilla-nosotros img {
+        border: rgb(0, 0, 0) dashed 2px;
+        width: 394px;
+    }
+
+    div .fotos-fundadores img {
+        width: 180px;
+    }
+    
+    footer {
+        opacity: 20%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: small;
+        background-color: #2f2f2f;
+        color: white;
+        text-align: center;
+        padding: 2px;
+    }
+    h4 {
+        font-size: smaller;
+    }
+
+}
