@@ -10,7 +10,8 @@
     font-family: "norwester-titulos";
     src: url(./resources/typo/norwester.otf);
 }
-@font-face{
+
+@font-face {
     font-family: "JetBrainsMono";
     src: url(./resources/typo/JetBrainsMono/JetBrainsMono-Bold.ttf)
 }
@@ -31,7 +32,7 @@ h1 {
     margin-left: 10px;
 }
 
-p{
+p {
     font-size: 20px;
 }
 
@@ -98,7 +99,7 @@ div .logo-imagen {
     font-family: "Azeret Mono", monospace !important;
 }
 
-body video{
+body video {
     overflow: hidden;
     position: fixed;
     height: 100%;
@@ -221,22 +222,39 @@ div .carousel-inner p {
     color: #2d2d2d;
 }
 
-
 .cards-clientes p {
     font-size: small;
     text-align: center;
 }
 
 /* MAIN CONTACTO */
-main .contacto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.contacto {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 8px;
+    justify-items: center;
+    padding: 8px;
 }
 
-main .contacto p {
-    margin: 0%;
+.contacto .ubicacion {
+    border: rgb(128, 127, 126) 2px dashed;
+    width: 100%;
 }
+
+.contacto .ubicacion iframe {
+    padding-top: 16px;
+    height: 450px;
+    width: 100%;
+}
+
+
+.contacto p {
+    font-size: 15px;
+    margin: 0% !important;
+    padding: 2px;
+}
+
 
 textarea {
     margin-top: 5px;
@@ -350,17 +368,20 @@ footer h4 {
     .clientes-padre {
         background-color: #d8d8d8 !important;
     }
+
     .clientes-padre div {
         width: 45%;
         margin: 5px;
-        background-color: #d8d8d8;  
+        background-color: #d8d8d8;
         border: #000000 solid 2px !important;
     }
+
     .cards-clientes p {
         font-size: 18px;
         text-align: center;
         padding: 4px;
     }
+
     .cards-clientes h4 {
         font-size: 20px;
     }
@@ -369,6 +390,12 @@ footer h4 {
 /*MOBILE*/
 
 @media (max-width:576px) {
+
+    main .grilla-nosotros p {
+        margin-top: 2px !important;
+        padding: 8px;
+    }
+
     main .grilla-nosotros {
         display: grid;
         grid-template-columns: 1fr;
@@ -388,12 +415,17 @@ footer h4 {
         opacity: 20%;
     }
 
+    p {
+        font-size: 15px;
+        padding: 8px;
+    }
+
     h1 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     h3 {
-        font-size: small;
+        font-size: 20px;
         background-color: #2f2f2f;
         color: white;
         text-align: center;
@@ -405,28 +437,56 @@ footer h4 {
         padding: 8px;
     }
 
-    main .grilla-nosotros p {
-        margin-top: 2px !important;
-        font-size: 12px;
-        padding: 8px;
-    }
-
     .clientes-padre {
         background-color: #d8d8d8 !important;
     }
+
     .clientes-padre div {
         width: 100%;
         margin: 5px;
-        background-color: #d8d8d8;  
+        background-color: #d8d8d8;
         border: #000000 solid 2px !important;
     }
+
     .cards-clientes p {
         font-size: small;
         text-align: center;
         padding: 4px;
     }
+
     .cards-clientes h4 {
         font-size: 20px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .contacto {
+        grid-template-columns: 1fr;
+        justify-content: first baseline;
+    }
+
+    .contacto .ubicacion {
+        width: 100%;
+    }
+
+    .contacto .ubicacion iframe {
+        padding-top: 8px;
+        width: 100%;
+    }
+
+
+    .contacto .fomulario {
+        width: 100%;
+    }
+
+    input {
+        width: 100px;
+    }
+
+    textarea {
+        width: 350px;
     }
 
 }
