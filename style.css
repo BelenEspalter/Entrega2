@@ -2,7 +2,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Azeret Mono", monospace;
+    font-family: "Outfit", sans-serif;
     box-sizing: border-box;
 }
 
@@ -10,14 +10,29 @@
     font-family: "norwester-titulos";
     src: url(./resources/typo/norwester.otf);
 }
+@font-face{
+    font-family: "JetBrainsMono";
+    src: url(./resources/typo/JetBrainsMono/JetBrainsMono-Bold.ttf)
+}
+
+/* Tipografia Web */
+/* font-family: "Outfit", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* font-family: "Azeret Mono", monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
 
 h1 {
     color: #2f2f2f !important;
     text-align: left;
-    font-family: "norwester-titulos";
+    font-family: "Azeret Mono", monospace;
     font-size: 25px;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+p{
+    font-size: 20px;
 }
 
 img {
@@ -73,28 +88,22 @@ div .logo-imagen {
     font-size: xx-large;
     color: rgb(0, 0, 0);
     padding: 0;
+    font-family: "Azeret Mono", monospace !important;
 }
 
 .letras-logo .texto-secundario {
     font-size: medium;
     color: rgb(0, 0, 0);
     padding: 0;
+    font-family: "Azeret Mono", monospace !important;
 }
 
-
-body .fondo-index {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent !important;
-}
-
-body video {
-    margin: 0%;
+body video{
     overflow: hidden;
     position: fixed;
-    align-items: center;
+    height: 100%;
 }
+
 
 nav .nav .nav-pills .flex-column .flex-sm-row {
     background-color: transparent;
@@ -167,7 +176,8 @@ p.texto-fundadores {
 
 /* MAIN SERVICIOS */
 div .carousel-inner img {
-    border: rgb(65, 64, 64) dashed 2px !important;
+    height: 100%;
+    overflow: hidden;
 }
 
 div .carousel-inner p {
@@ -176,7 +186,6 @@ div .carousel-inner p {
     padding: 10px;
     margin: 0% !important;
 }
-
 
 
 /* MAIN CLIENTES */
@@ -203,12 +212,13 @@ div .carousel-inner p {
     flex-direction: column;
     align-items: center;
     width: 25%;
-    min-height: 330px;
     padding: 3px;
 }
 
 .cards-clientes h4 {
     margin-top: 5px;
+    font-family: "norwester-titulos";
+    color: #2d2d2d;
 }
 
 
@@ -256,8 +266,6 @@ input {
 }
 
 
-
-
 /* BOTON FIJO */
 
 button {
@@ -265,6 +273,8 @@ button {
     top: 85%;
     right: 25px;
 }
+
+/* FOOTER */
 
 footer {
     display: block;
@@ -293,7 +303,7 @@ footer h4 {
 /*MOBILE LAST - - - max-width */
 
 /*TABLET*/
-@media (max-width:768px) {
+@media (max-width:992px) {
     main .grilla-nosotros {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -302,8 +312,7 @@ footer h4 {
     }
 
     main .grilla-nosotros img {
-        border: rgb(0, 0, 0) dashed 2px;
-        width: 369px;
+        width: 100%;
         margin-bottom: 5px;
     }
 
@@ -318,6 +327,7 @@ footer h4 {
     h1 {
         font-size: 25px;
     }
+
     h3 {
         font-size: small;
         background-color: black;
@@ -326,12 +336,33 @@ footer h4 {
         padding: 4px;
         margin-top: 4px !important;
     }
+
     h4 {
         font-size: small;
+        font-family: "Azeret Mono", monospace !important;
     }
-    main .grilla-nosotros p{
+
+    main .grilla-nosotros p {
         margin-top: 2px !important;
         font-size: 15px;
+    }
+
+    .clientes-padre {
+        background-color: #d8d8d8 !important;
+    }
+    .clientes-padre div {
+        width: 45%;
+        margin: 5px;
+        background-color: #d8d8d8;  
+        border: #000000 solid 2px !important;
+    }
+    .cards-clientes p {
+        font-size: 18px;
+        text-align: center;
+        padding: 4px;
+    }
+    .cards-clientes h4 {
+        font-size: 20px;
     }
 }
 
@@ -342,18 +373,17 @@ footer h4 {
         display: grid;
         grid-template-columns: 1fr;
         column-gap: 10px;
-        margin: 10px;
+        margin: 0;
     }
 
     main .grilla-nosotros img {
-        border: rgb(0, 0, 0) dashed 2px;
-        width: 394px;
+        width: 100%;
     }
 
     div .fotos-fundadores img {
         width: 180px;
     }
-    
+
     footer {
         opacity: 20%;
     }
@@ -361,6 +391,7 @@ footer h4 {
     h1 {
         font-size: 22px;
     }
+
     h3 {
         font-size: small;
         background-color: #2f2f2f;
@@ -368,8 +399,34 @@ footer h4 {
         text-align: center;
         padding: 2px;
     }
+
     h4 {
         font-size: smaller;
+        padding: 8px;
+    }
+
+    main .grilla-nosotros p {
+        margin-top: 2px !important;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .clientes-padre {
+        background-color: #d8d8d8 !important;
+    }
+    .clientes-padre div {
+        width: 100%;
+        margin: 5px;
+        background-color: #d8d8d8;  
+        border: #000000 solid 2px !important;
+    }
+    .cards-clientes p {
+        font-size: small;
+        text-align: center;
+        padding: 4px;
+    }
+    .cards-clientes h4 {
+        font-size: 20px;
     }
 
 }
